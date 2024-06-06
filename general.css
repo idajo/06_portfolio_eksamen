@@ -1,0 +1,38 @@
+/* farve variabler */
+html {
+  --primary-background: #fcf9f5;
+  --primary-text: #3f453b;
+  --font-playfair-display: "Playfair Display", serif;
+  --font-raleway: "Raleway", sans-serif;
+  --weight-regular: 400;
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+}
+
+/* body {
+  font-family: var(--font-raleway);
+  font-weight: var(--weight-regular);
+} */
+body {
+  background-color: var(--primary-background);
+}
+
+h1 {
+  font-family: var(--font-playfair-display);
+  font-weight: var(--weight-regular);
+}
+
+h2 {
+  font-family: var(--font-playfair-display);
+  font-weight: var(--weight-bold);
+}
+
+h3 {
+  font-family: var(--font-raleway);
+  font-weight: var(--weight-semi-bold);
+}
+
+p {
+  font-family: var(--font-raleway);
+  font-weight: var(--weight-regular);
+}
