@@ -306,9 +306,11 @@ nav {
   }
   /*************** Footer ****************/
   hr {
-    margin-top: 20%;
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
+  }
+  .ommig_hr {
+    margin-top: 20%;
   }
   footer {
     display: flex;
@@ -609,9 +611,11 @@ nav {
   }
   /*************** Footer ****************/
   hr {
-    margin-top: 20%;
     color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
+  }
+  .ommig_hr {
+    margin-top: 20%;
   }
   footer {
     display: flex;
