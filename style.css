@@ -306,6 +306,7 @@ nav {
   }
   /*************** Footer ****************/
   hr {
+    margin-top: 20%;
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
   }
@@ -608,10 +609,10 @@ nav {
   }
   /*************** Footer ****************/
   hr {
+    margin-top: 20%;
     color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
   }
-  /*************** Footer ****************/
   footer {
     display: flex;
     flex-direction: column;
