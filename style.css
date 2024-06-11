@@ -61,7 +61,9 @@ nav {
 .burger {
   display: none;
 }
-@media screen and (max-width: 800px) {
+
+/***********************************************MOBILEFIRST**********************************************************/
+@media screen and (max-width: 750px) {
   .menu {
     display: none;
   }
@@ -101,193 +103,538 @@ nav {
   nav.active .menu a {
     font-size: 24px;
   }
+
+  /************ forside *****************/
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: end;
+    margin-block: 188px;
+    margin-inline: 15px;
+  }
+  .knap_om_mig,
+  .knap_portfolio,
+  .knap_portfolio_ommig {
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-color);
+    padding-inline: 5px;
+    transition: color 0.3s;
+    font-size: 2rem;
+    font-family: var(--font-playfair-display);
+  }
+
+  .knap_om_mig:hover,
+  .knap_portfolio:hover,
+  .knap_portfolio_ommig:hover {
+    color: var(--accent-color);
+  }
+  /*********OM MIG ***************/
+  .underline {
+    display: flex;
+    justify-content: end;
+    margin-block: 90px;
+    margin-inline: 15px;
+    border-bottom: 2px solid var(--secondary-color);
+  }
+
+  .om_mig {
+    width: 71%;
+    height: auto;
+    margin-right: 10%;
+    margin-inline: 3%;
+    margin-bottom: 9%;
+  }
+  /*** færdigheder ***/
+
+  .container_skills1_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 4%;
+    margin-bottom: 20%;
+  }
+  .gridcol {
+    display: flex;
+  }
+  .text {
+    font-family: var(--font-raleway);
+    font-weight: var(--weight-semi-bold);
+    align-content: center;
+    margin-left: 3%;
+  }
+  .graph-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin-inline: 4%;
+  }
+  .graph {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 200px;
+    height: 40px;
+  }
+
+  .bar {
+    width: 25px; /* Adjust width of each bar */
+    border: 2px solid var(--accent-color); /* Border for each bar */
+  }
+
+  .filled {
+    background-color: var(--accent-color); /* Color for filled bars */
+  }
+
+  .empty {
+    opacity: 0.3; /* Opacity for empty bars */
+  }
+
+  /* gallerigrid */
+
+  .container_galleri1_1_1,
+  .container_galleri1_1 img {
+    object-fit: cover;
+  }
+
+  .container_galleridesktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin: 1%;
+  }
+
+  .buttons {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+
+  .container_galleri1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/3;
+    grid-row: 1;
+    gap: 10px;
+  }
+
+  .bilde1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  .bilde2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .bilde3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .bilde4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+  }
+
+  .container_galleri1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1 / 4;
+    grid-row: 2;
+    gap: 10px;
+  }
+
+  .bilde5 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+  .bilde6 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+  }
+  .bilde7 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 5;
+  }
+  .bilde8 {
+    grid-column: 1 / 4;
+    grid-row: 5 / 5;
+  }
+
+  /* link text: raleway, semibold 600 , 14 farve c0c0c0, hover farve accent */
+  .underlineporto {
+    display: flex;
+    justify-content: end;
+    margin-block: 108px;
+    margin-inline: 12px;
+    border-bottom: 2px solid var(--secondary-color);
+    margin-bottom: 38%;
+  }
+
+  .projekter-container {
+    text-align: right; /* Align children to the right */
+    margin-bottom: 183px;
+    margin-inline: 15px;
+  }
+  .projekter {
+    font-family: var(--font-raleway);
+    font-weight: var(--weight-semi-bold);
+    font-size: 1.4rem;
+    color: var(--metallic-silver);
+    text-decoration: none;
+    border-bottom: 2px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-color);
+    padding-inline: 5px;
+  }
+  .projekter:hover {
+    color: var(--accent-color);
+  }
+
+  .portfolio_img {
+    width: 71%;
+    height: auto;
+    margin-right: 10%;
+    margin-inline: 3%;
+    margin-bottom: 9%;
+  }
+
+  .passionvirksomhed {
+    font-size: 1.5rem;
+    margin-bottom: 8%;
+  }
+  /*************** Footer ****************/
+  hr {
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer p {
+    margin: 5% auto;
+    text-align: center;
+  }
+  footer a {
+    width: 20%;
+  }
+
+  .footergrid {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
 }
 
-/************ forside *****************/
+/******************************************** DESKTOP!! **************************************************************/
 
-.buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: end;
-  margin-block: 188px;
-  margin-inline: 15px;
-}
+@media (min-width: 750px) {
+  /***** forside *****/
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: end;
+    margin-block: 188px;
+    margin-inline: 15px;
+  }
+  .knap_om_mig,
+  .knap_portfolio,
+  .knap_portfolio_ommig {
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-color);
+    padding-inline: 5px;
+    transition: color 0.3s;
+    font-size: 3rem;
+    font-family: var(--font-playfair-display);
+  }
 
-.knap_om_mig,
-.knap_portfolio {
-  text-decoration: none;
-  color: var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
-  border-right: 2px solid var(--secondary-color);
-  padding-inline: 5px;
-  transition: color 0.3s;
-}
+  .knap_om_mig:hover,
+  .knap_portfolio:hover,
+  .knap_portfolio_ommig:hover {
+    color: var(--accent-color);
+  }
 
-.knap_om_mig:hover,
-.knap_portfolio:hover {
-  color: var(--accent-color);
-}
+  /***** OM MIG *****/
+  .underline {
+    display: grid;
+    justify-content: end;
+    margin-block: 90px;
+    margin-inline: 15px;
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  .om_miggrid1_1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .om_mig {
+    width: 30%;
+    height: auto;
+    margin-right: 10%;
+    margin-inline: 3%;
+    margin-bottom: 3%;
+    flex-shrink: 0;
+  }
 
-/*********OM MIG ***************/
-.underline {
-  display: flex;
-  justify-content: end;
-  margin-block: 90px;
-  margin-inline: 15px;
-  border-bottom: 2px solid var(--secondary-color);
-}
+  .om_migtekst {
+    display: flex;
+    align-items: end;
+    flex-basis: 50ch;
+    margin-inline: -1%;
+  }
+  /* færdigheder */
+  .graftekst {
+    margin-top: 5%;
+    margin-left: 3%;
+  }
+  .container_skills1_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 4%;
+    margin-bottom: 10%;
+  }
+  .gridcol {
+    display: flex;
+  }
+  .text {
+    display: flex;
+    flex-shrink: 0;
+    flex-basis: 15ch;
+    align-items: center;
+    font-family: var(--font-raleway);
+    font-weight: var(--weight-semi-bold);
+    margin-left: 20%;
+  }
+  .graph-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 0;
+    margin-inline: 4%;
+  }
+  .graph {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+  }
 
-.om_mig {
-  width: 71%;
-  height: auto;
-  margin-right: 10%;
-  margin-inline: 3%;
-  margin-bottom: 9%;
-}
-/*** færdigheder ***/
+  .bar {
+    width: 25px;
+    border: 2px solid var(--accent-color);
+  }
 
-.container_skills1_1 {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 4%;
-}
-.gridcol {
-  display: flex;
-}
-.text {
-  font-family: var(--font-raleway);
-  font-weight: var(--weight-semi-bold);
-  align-content: center;
-  margin-left: 3%;
-}
-.graph-container {
-  display: flex;
-  justify-content: flex-end;
-  flex-grow: 1;
-  margin-inline: 4%;
-}
-.graph {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 200px;
-  height: 40px;
-}
+  .filled {
+    background-color: var(--accent-color); /* Color for filled bars */
+  }
 
-.bar {
-  width: 20px; /* Adjust width of each bar */
-  border: 1px solid var(--accent-color); /* Border for each bar */
-}
+  .empty {
+    opacity: 0.3; /* Opacity for empty bars */
+  }
 
-.filled {
-  background-color: var(--accent-color); /* Color for filled bars */
-}
+  /*** OM MIG GALLERI !!!! ***/
 
-.empty {
-  opacity: 0.1; /* Opacity for empty bars */
-}
+  .container_galleri1_1_1,
+  .container_galleri1_1 img {
+    object-fit: cover;
+  }
 
-/* gallerigrid */
-.container_galleri1_1_1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 8px;
-  margin-left: 3%;
-  margin-top: 20%;
-}
-.bilde1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-}
+  .container_galleridesktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 1%;
+  }
+  .buttons {
+    grid-column: 3 /4;
+    grid-row: 1 / 2;
+  }
+  .container_galleri1_1_1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 1 /3;
+    grid-row: 1/3;
+    gap: 10px;
+  }
+  .bilde1 {
+    grid-column: 1/3;
+    grid-row: 1/4;
+  }
+  .bilde2 {
+    grid-column: 3 / 5;
+    grid-row: 1/3;
+  }
+  .bilde3 {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  .bilde4 {
+    display: none;
+  }
 
-.bilde2 {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-.bilde3 {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-}
-.bilde4 {
-  grid-column: 2 / 3;
-  grid-row: 2 / 4;
-}
+  .container_galleri1_1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column: 2 /4;
+    grid-row: 2/4;
+    gap: 10px;
+    padding-top: 26%;
+  }
 
-.container_galleri1_1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-  margin-top: 15%;
-  margin: 3%;
-}
-.bilde5 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 4;
-}
-.bilde6 {
-  grid-column: 2 / 3;
-  grid-row: 1 / 5;
-}
-.bilde7 {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
-}
-.bilde8 {
-  grid-column: 1 / 3;
-  grid-row: 5 / 6;
-}
+  .bilde5 {
+    grid-column: 1/4;
+    grid-row: 1/3;
+  }
+  .bilde6 {
+    grid-column: 4/5;
+    grid-row: 1 /4;
+  }
+  .bilde7 {
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+  .bilde8 {
+    grid-column: 1/5;
+    grid-row: 4/5;
+  }
 
-/*********Portfolio ************/
-/* bilder mobilesite  */
-/* width: 71%;
-  height: auto;
-  margin-right: 10%;
-  margin-left: 3%; */
+  /* Portfolio billeder */
 
-/* link text: raleway, semibold 600 , 14 farve c0c0c0, hover farve accent */
-.underlineporto {
-  display: flex;
-  justify-content: end;
-  margin-block: 108px;
-  margin-inline: 12px;
-  border-bottom: 2px solid var(--secondary-color);
-  margin-bottom: 38%;
-}
+  .tema2griddesktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-.projekter-container {
-  text-align: right; /* Align children to the right */
-  margin-bottom: 183px;
-  margin-inline: 15px;
-}
-.projekter {
-  font-family: var(--font-raleway);
-  font-weight: var(--weight-semi-bold);
-  font-size: 1.4rem;
-  color: var(--metallic-silver);
-  text-decoration: none;
-  border-bottom: 2px solid var(--secondary-color);
-  border-right: 2px solid var(--secondary-color);
-  padding-inline: 5px;
-  transition: color 0.3s;
-}
-.projekter:hover {
-  color: var(--accent-color);
-}
+  .portfolio_img {
+    display: grid;
+    grid-row: 1;
+  }
+  .tema2griddesktop h3 {
+    grid-row: 2;
+  }
+  .tema3griddesktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-.portfolio_img {
-  width: 71%;
-  height: auto;
-  margin-right: 10%;
-  margin-inline: 3%;
-  margin-bottom: 9%;
-}
-/*************** Footer ****************/
-footer {
-  padding: 20px 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  /* border-top: 2px solid -- HUSK FARVE som var.!; */
+  .portfolio_img {
+    display: grid;
+    grid-row: 1;
+  }
+  .tema3griddesktop h3 {
+    grid-row: 2;
+  }
+  .tema4griddesktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .portfolio_img {
+    display: grid;
+    grid-row: 1;
+  }
+  .tema4griddesktop h3 {
+    grid-row: 2;
+  }
+  .tema5pasgriddesktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3%;
+  }
+
+  .portfolio_img {
+    display: grid;
+    grid-row: 1;
+  }
+  .tema5pasgriddesktop h3 {
+    grid-row: 2;
+  }
+
+  .tema5virkgriddesktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3%;
+  }
+
+  .portfolio_img {
+    display: grid;
+    grid-row: 1;
+  }
+  .tema5virkgriddesktop h3 {
+    grid-row: 2;
+  }
+  /* link text: raleway, semibold 600 , 14 farve c0c0c0, hover farve accent */
+  .underlineporto {
+    display: flex;
+    justify-content: end;
+    margin-block: 108px;
+    margin-inline: 12px;
+    border-bottom: 2px solid var(--secondary-color);
+    margin-bottom: 27%;
+  }
+
+  .projekter-container {
+    text-align: right;
+    margin-bottom: 183px;
+    margin-inline: 15px;
+  }
+  .projekter {
+    font-family: var(--font-raleway);
+    font-weight: var(--weight-semi-bold);
+    font-size: 1.8rem;
+    color: var(--metallic-silver);
+    text-decoration: none;
+    border-bottom: 2px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-color);
+    padding-inline: 5px;
+  }
+  .projekter:hover {
+    color: var(--accent-color);
+  }
+
+  .passionvirksomhed {
+    font-size: 1.5rem;
+  }
+  /*************** Footer ****************/
+  hr {
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+  }
+  /*************** Footer ****************/
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+    font-size: 1.5rem;
+    /* border-top: 2px solid -- HUSK FARVE som var.!; */
+  }
+  footer p {
+    margin: 1% auto;
+    text-align: center;
+    font-size: 1rem;
+  }
+  footer a {
+    width: 10%;
+  }
+
+  .footergrid {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
 }
